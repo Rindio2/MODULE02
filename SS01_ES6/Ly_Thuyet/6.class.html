@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--  
+        class: lớp dùng để khởi tạo đối tượng
+            - trước khi không có class thì khởi tạo đối tượng dùng function contructor
+    -->
+    <script>
+        let obj1= {
+            name: "Tuna",
+            age: 12,
+        }
+        function Person(name,age){
+            this.name=name;
+            this.age=age;
+        }
+        let std1= new Person("hao",23);
+        console.log(std1);
+
+        class Student{
+            address ="Ha Noi";
+            constructor(name,age){
+                this.name=name;// thuộc tính
+                this.age=age;
+            }
+            sayHello(){
+                console.log("Xin Chào", this.address);
+            }// phương thức
+            sayName=()=>{
+                console.log("Xin Chào", this.address);
+            }
+        }
+        let std2= new Student("minh",19);
+        let std3= new Student("Tai",20);
+        console.log(std2);
+        console.log(std2.sayHello());
+        // khi đối tượng gọi phương thức thì this đại diện cho đối tượng đó 
+        console.log(std3.sayHello());
+    </script>
+</body>
+</html>

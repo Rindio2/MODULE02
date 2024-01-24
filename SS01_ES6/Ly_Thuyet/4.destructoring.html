@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--  
+        Dùng nhiều:
+            1. destructoring với object
+            2. destructoring với mảng
+
+    -->
+    <script>
+        let obj ={
+            name: "hoa",
+            age: 23,
+            address: "HaNoi",
+        }
+        const {name,age,address}=obj; // không cần đúng vị trí
+        console.log("name",name);
+        let number =[4,5];
+        const [a,b]= number;
+        console.log(b);
+    </script>
+</body>
+</html>
