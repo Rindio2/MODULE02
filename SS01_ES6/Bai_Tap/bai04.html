@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function findFirstEven(numbers) {
+            // Sử dụng phương thức find() để tìm phần tử đầu tiên là số chẵn
+            const firstEven = numbers.find(function (number) {
+                return number % 2 === 0;
+            });
+
+            return firstEven;
+        }
+
+        // Ví dụ sử dụng
+        const numberArray = [1, 3, 5, 6, 7, 8, 9];
+        const result = findFirstEven(numberArray);
+        console.log(result); // Kết quả sẽ là 6
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function checkIfElementExists(arr, value) {
+            // Sử dụng phương thức includes() để kiểm tra xem giá trị có tồn tại trong mảng hay không
+            return arr.includes(value);
+        }
+
+        // Ví dụ sử dụng
+        const arrayExample = [1, 2, 3, 4, 5];
+        const valueToCheck = 3;
+        const result = checkIfElementExists(arrayExample, valueToCheck);
+        console.log(result); // Kết quả sẽ là true
+
+    </script>
+</body>
+
+</html>

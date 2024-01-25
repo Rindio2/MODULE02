@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function squareNumbers(numbers) {
+            // Sử dụng map() để tạo một mảng mới chứa các số bình phương
+            const squaredArray = numbers.map(function (number) {
+                return number * number;
+            });
+
+            return squaredArray;
+        }
+
+        // Ví dụ sử dụng
+        const numberArray = [1, 2, 3, 4, 5];
+        const result = squareNumbers(numberArray);
+        console.log(result); // Kết quả sẽ là [1, 4, 9, 16, 25]
+
+    </script>
+</body>
+
+</html>
