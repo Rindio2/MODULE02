@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function filterEvenNumbers(numbers) {
+            // Sử dụng phương thức filter() để lọc ra các số chẵn
+            const evenNumbers = numbers.filter(function (number) {
+                return number % 2 === 0;
+            });
+
+            return evenNumbers;
+        }
+
+        // Ví dụ sử dụng
+        const numberArray = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+        const result = filterEvenNumbers(numberArray);
+        console.log(result); // Kết quả sẽ là [2, 4, 6, 8]
+
+    </script>
+</body>
+
+</html>

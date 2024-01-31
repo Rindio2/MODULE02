@@ -51,37 +51,47 @@ import React, { Component } from 'react'
     muốn truyền dữ liệu từ 
   event: hành động tương tác
 */
-import Parent from './component/Parent';
+
+import Products from './component/Products.jsx';
 
 
 export default class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      count: 0,
-      title: "rikkei academy",
-      name : "Tuan",
-    };
+
+  constructor(){
+    super()
+    this.state={
+      student:[{
+        name: "thu",
+        id :1,
+
+      }],
+      isActive:false,
+      title: "hoc lap trinh",
+
+    }
   }
 
-  increase = () => {
-    this.setState({
-      count: this.state.count + 1,
-    });
-    this.setState({
-      title: "rikkei"
-    })
-  };
-
   render() {
+
+    const std = ["tuan", "hao", "tinh"];
+    const handleClick=()=>{
+      this.setState({
+        title: "hoc di troi"
+      })
+    }
+
     return (
       <>
         <div>App</div>
 
-        <p>count: {this.state.count}</p>
-        <p>company: {this.state.title}</p>
-        <button onClick={this.increase}>increase</button>
-        <Parent name={this.state.name}></Parent>
+        <ul>
+          {std.map((item,index)=>{
+            return <li key={index} >{item}</li>
+          })}
+        </ul>
+        <p>title :{this.state.title}</p>
+        <button onClick={handleClick}>sds</button>
+        <Products student={this.state.student}></Products>
       </>
     );
   }
