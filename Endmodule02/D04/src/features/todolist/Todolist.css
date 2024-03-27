@@ -1,0 +1,35 @@
+/* TodolistItem.css */
+.todo-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  padding: 8px;
+  border-radius: 4px;
+  background-color: #f0f0f0;
+}
+
+.todo-item.checked {
+  text-decoration: line-through;
+}
+
+.todo-item input[type="text"] {
+  flex: 1;
+  margin-right: 8px;
+  padding: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.todo-item button {
+  margin-left: 8px;
+  padding: 4px 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+}
+
+.todo-item button:hover {
+  background-color: #0056b3;
+}

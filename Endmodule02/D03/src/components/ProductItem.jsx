@@ -1,4 +1,3 @@
-// ProductItem.jsx
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { addToCart } from '../store/slices/cartSlice';
@@ -12,7 +11,7 @@ function ProductItem({ product }) {
 
   return (
     <li>
-      {product.name} - ${product.price}
+      <span>{product.name} - ${product.price}</span>
       <button onClick={handleAddToCart}>Add to Cart</button>
     </li>
   );

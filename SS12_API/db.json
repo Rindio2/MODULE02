@@ -1,0 +1,16 @@
+{
+    "users":[
+        {
+            "name":"hoa",
+            "id":1
+        },
+        {
+            "name":"hong",
+            "id":2
+        },
+        {
+            "name":"thong",
+            "id":3
+        }
+    ]
+}
